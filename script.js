@@ -186,7 +186,8 @@ function makeRequest(url, isPreview, text, isDenoApi, requestId = '') {
         signal: controller.signal,
         headers: {
             'Accept': 'audio/mpeg',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'x-api-key' : '@Luo00916xx'
         },
         body: JSON.stringify(requestBody)
     })
