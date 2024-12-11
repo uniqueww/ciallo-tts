@@ -5,7 +5,7 @@ let requestCounter = 0;
 
 const API_CONFIG = {
     'workers-api': {
-        url: 'https://tts.uniaue.me/tts'
+        url: 'https://ttsapi.uniaue.me/tts'
     },
     'deno-api': {
         url: 'https://deno-tts.api.zwei.de.eu.org/tts'
