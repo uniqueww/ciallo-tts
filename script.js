@@ -187,7 +187,7 @@ function makeRequest(url, isPreview, text, isDenoApi, requestId = '') {
         headers: {
             'Accept': 'audio/mpeg',
             'Content-Type': 'application/json',
-            'x-api-key' : '@Luo00916xx'
+            'x-auth-token' : '@Luo00916xx'
         },
         body: JSON.stringify(requestBody)
     })
