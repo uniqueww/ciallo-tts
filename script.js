@@ -17,9 +17,6 @@ function loadSpeakers() {
         url: 'speakers.json',
         method: 'GET',
         dataType: 'json',
-        headers: {
-            'x-api-key': '@Luo00916xx'
-        },
         success: function(data) {
             apiConfig = data;
             updateSpeakerOptions('workers-api');
