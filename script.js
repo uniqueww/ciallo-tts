@@ -5,7 +5,7 @@ let requestCounter = 0;
 
 const API_CONFIG = {
     'workers-api': {
-        url: 'https://worker-tts.api.zwei.de.eu.org/tts'
+        url: 'https://tts.uniaue.me/tts'
     },
     'deno-api': {
         url: 'https://deno-tts.api.zwei.de.eu.org/tts'
@@ -17,6 +17,9 @@ function loadSpeakers() {
         url: 'speakers.json',
         method: 'GET',
         dataType: 'json',
+        headers: {
+            'x-api-key': '@Luo00916xx'
+        },
         success: function(data) {
             apiConfig = data;
             updateSpeakerOptions('workers-api');
