@@ -185,7 +185,7 @@ function makeRequest(url, isPreview, text, isDenoApi, requestId = '') {
         method: 'POST',
         signal: controller.signal,
         headers: {
-            'ccess-Control-Allow-Headers',
+            'Access-Control-Allow-Headers': '*', 
             'Accept': 'audio/mpeg',
             'Content-Type': 'application/json',
             'x-auth-token' : '@Luo00916xx'
